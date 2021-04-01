@@ -5,23 +5,15 @@
     text-align: center;
     line-height: 200px;
 }
-
-.clearfix::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
 /* riga 5 style */
-#left, #right{
-    width: 50%;
-    float: left;
+.row.five>.col-6{
+    padding: 10px;
 }
 
-#left span, #right span{
-    display: inline-block;
-    width:calc(100% - 20px) ;
-    height: calc(100% - 20px);
-    margin: 10px;
+.row.five .col-6>[class*=col-]{
+
+    border: 1px solid white;
+    height: 180px;
     background-color: rgba(240, 127, 128, 1);
+    line-height: 180px;
 }
